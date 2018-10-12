@@ -82,4 +82,3 @@ production:
   <<: *default
   database: taskboard_production
   username: radoslaw.lewandowski
-  password: <%= ENV['TASKBOARD_DATABASE_PASSWORD'] %>
