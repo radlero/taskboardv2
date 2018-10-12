@@ -1,0 +1,21 @@
+<p>
+  <strong>Task:</strong>
+  <%= @task.task %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @task.time %>
+</p>
+
+<p>
+  <strong>Station:</strong>
+  <%= @task.station %>
+</p>
+
+<p>
+  <strong>Importance:</strong>
+  <%= @task.importance %>
+</p>
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

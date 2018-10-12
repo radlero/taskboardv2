@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  time: MyString
+  station: MyString
+  importance: MyString
+
+two:
+  task: MyString
+  time: MyString
+  station: MyString
+  importance: MyString
