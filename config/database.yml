@@ -80,5 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: taskboard_production
-  username: radoslaw.lewandowski
+  database: d8cauv7gstk1f2
+  username: jnglifuodasenn
+  password: 8427e9f5c5cda849e267278174ef52d07ce267d3bff9057179d25aebb55f2e39
+  url: postgres://jnglifuodasenn:8427e9f5c5cda849e267278174ef52d07ce267d3bff9057179d25aebb55f2e39@ec2-54-217-245-26.eu-west-1.compute.amazonaws.com:5432/d8cauv7gstk1f2
