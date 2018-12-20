@@ -38,7 +38,7 @@ def update
 end
       private
   def task_params
-    params.require(:task).permit(:task, :time, :station, :importance)
+    params.require(:task).permit(:task, :time, :station, :importance, :make, :regnum)
 
   end
   end

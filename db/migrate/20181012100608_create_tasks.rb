@@ -5,6 +5,8 @@ class CreateTasks < ActiveRecord::Migration[5.2]
       t.string :time
       t.string :station
       t.string :importance
+      t.string :make
+      t.string :regnum
 
       t.timestamps
     end

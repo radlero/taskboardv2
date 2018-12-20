@@ -17,5 +17,15 @@
   <strong>Importance:</strong>
   <%= @task.importance %>
 </p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @task.make %>
+</p>
+
+<p>
+  <strong>Reg Number:</strong>
+  <%= @task.regnum %>
+</p>
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>

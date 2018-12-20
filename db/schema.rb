@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2018_10_12_100608) do
     t.string "time"
     t.string "station"
     t.string "importance"
+    t.string "make"
+    t.string "regnum"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

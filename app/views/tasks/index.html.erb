@@ -7,6 +7,8 @@
     <th>Time</th>
     <th>Station</th>
     <th>Importance</th>
+    <th>Make</th>
+    <th>Reg Number</th>
     <th></th>
   </tr>
 
@@ -16,6 +18,8 @@
       <td><%= task.time %></td>
       <td><%= task.station %></td>
       <td><%= task.importance %></td>
+      <td><%= task.make %></td>
+      <td><%= task.regnum %></td>
       <td><%= link_to 'Show', task_path(task) %></td>
       <td><%= link_to 'Edit', edit_task_path(task) %></td>
       <td><%= link_to 'Destroy', task_path(task),
