@@ -1,9 +1,9 @@
 class TasksController < ApplicationController
   # basic user authentication for edit, destroy and create
  http_basic_authenticate_with name: "rad", password: "uws", except: [:index, :show]
- 
+
   def index
-      @tasks = Task.all
+      @tasks = Task.priority_order.all
     end
   def show
     @task = Task.find(params[:id])
