@@ -10,4 +10,6 @@ class Task < ApplicationRecord
       WHEN Importance = 'green' THEN '3'
     END")
   end
+
+
 end
