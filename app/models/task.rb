@@ -1,6 +1,5 @@
 class Task < ApplicationRecord
   # validation for time to be enter only once for each station
-  validates_uniqueness_of :time, scope: :station
   validates_presence_of :importance
 
   def self.priority_order
