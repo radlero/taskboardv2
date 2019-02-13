@@ -10,5 +10,11 @@ class Task < ApplicationRecord
     END")
   end
 
-
+  def self.stations_order
+    order("CASE
+    WHEN Station = 'station1' THEN '1'
+      WHEN Station = 'station2' THEN '2'
+      END"
+    )
+  end 
 end

@@ -3,7 +3,8 @@ class TasksController < ApplicationController
  http_basic_authenticate_with name: "rad", password: "uws", except: [:index, :show]
 
   def index
-      @tasks = Task.priority_order.all
+      @tasks = Task.stations_order.priority_order
+      
     end
   def show
     @task = Task.find(params[:id])
@@ -19,6 +20,7 @@ def create
       @task = Task.new(task_params)
 
       @task.save
+
       redirect_to @task
 end
 
