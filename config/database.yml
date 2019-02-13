@@ -30,22 +30,17 @@ development:
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
   #username: myapp
-
   # The password associated with the postgres role (username).
   #password:
-
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
   #host: localhost
-
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
   #port: 5432
-
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
-
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
   #   log, notice, warning, error, fatal, and panic
@@ -80,7 +75,7 @@ test:
 #
 production:
   <<: *default
-  database: d8cauv7gstk1f2
-  username: jnglifuodasenn
-  password: 8427e9f5c5cda849e267278174ef52d07ce267d3bff9057179d25aebb55f2e39
-  url: postgres://jnglifuodasenn:8427e9f5c5cda849e267278174ef52d07ce267d3bff9057179d25aebb55f2e39@ec2-54-217-245-26.eu-west-1.compute.amazonaws.com:5432/d8cauv7gstk1f2
+  database: da0at54qtm5hf1
+  username: dokdjetnzbvnvz
+  password: 57c4a1a9edfbdf42ab676c605d0db9792ad8633ecbe0427eae5e851993a741ce
+  url: postgres://dokdjetnzbvnvz:57c4a1a9edfbdf42ab676c605d0db9792ad8633ecbe0427eae5e851993a741ce@ec2-79-125-6-250.eu-west-1.compute.amazonaws.com:5432/da0at54qtm5hf1
