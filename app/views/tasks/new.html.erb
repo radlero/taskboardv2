@@ -1,4 +1,7 @@
-
+<div class="ch-row">
+  <div class="md:ch-col--8">
+    <div class="ch-card">
+      <div class="ch-card__content">
 <h1>New Task</h1>
   <%= form_with scope: :task, url: tasks_path, local: true do |form| %>
     <p>
@@ -16,7 +19,7 @@
 
     <p>
       <%= form.label :make %><br>
-      <%= form.text_field :make %>
+      <%= form.select :make, ['Alfa Romeo', 'Alpina', 'Aston Martin', 'Audi', 'Bentley', 'BMW', 'Citroen', 'Dacia', 'DS', 'Ferrari', 'Fiat', 'Ford', 'Honda', 'Hyundai', 'Infiniti', 'Jaguar', 'Jeep', 'Kia', 'Lamborghini', 'Land Rover', 'Lexus', 'Lotus', 'Maserati', 'Mazda', 'McLaren', 'Mercedes', 'MG', 'Mini', 'Mitsubishi', 'Nissan', 'Peugeot', 'Porsche', 'Renault', 'Rolls-Royce', 'Seat', 'Skoda', 'Smart', 'SsangYong', 'Subaru', 'Suzuki', 'Tesla', 'Toyota', 'Vauxhall', 'Volkswagen', 'Volvo']%>
     </p>
 
     <p>
@@ -25,7 +28,11 @@
     </p>
 
     <p>
-      <%= form.submit %>
+      <%= form.submit class: "ch-btn ch-btn--success"%>
     </p>
   <% end %>
-<%= link_to 'Back', tasks_path %>
+<%= link_to 'Back', tasks_path, {class: "ch-btn ch-btn--secondary"}%>
+</div>
+</div>
+</div>
+</div>

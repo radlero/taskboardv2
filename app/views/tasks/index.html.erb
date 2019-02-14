@@ -1,33 +1,40 @@
-<h1>All Garage Tasks</h1>
+<div class="ch-row">
+  <div class="md:ch-col--8">
+    <div class="ch-card">
+      <div class="ch-card__content">
+      <h1>All Garage Tasks</h1>
 
-<%= link_to 'New task', new_task_path %>
-
-<table>
+<%= link_to 'New task', new_task_path, {class: "ch-btn ch-btn--success ch-mb--3"}%>
+<%= link_to 'Station 1 Active Tasks', {controller: 'station1'}, {class: "ch-btn ch-btn--primary ch-mb--3"}%>
+<%= link_to 'Station 2 Active Tasks', {controller: 'station2'}, {class: "ch-btn ch-btn--primary ch-mb--3"} %>
+<table class="ch-table ch-table--bordered ch-table--hover ch-table--striped">
   <tr>
     <th>Task</th>
-    <th>Time</th>
     <th>Station</th>
     <th>Importance</th>
     <th>Make</th>
     <th>Reg Number</th>
+    <th></th>
+    <th></th>
     <th></th>
   </tr>
 
   <% @tasks.each do |task| %>
     <tr>
       <td><%= task.task %></td>
-      <td><%= task.time %></td>
       <td><%= task.station %></td>
       <td><%= task.importance %></td>
       <td><%= task.make %></td>
       <td><%= task.regnum %></td>
-      <td><%= link_to 'Show', task_path(task) %></td>
-      <td><%= link_to 'Edit', edit_task_path(task) %></td>
-      <td><%= link_to 'Destroy', task_path(task),
+      <td><%= link_to 'Show', task_path(task), {class: "ch-btn ch-btn--secondary"} %></td>
+      <td><%= link_to 'Edit', edit_task_path(task), {class: "ch-btn ch-btn--secondary"} %></td>
+      <td><%= link_to 'Destroy', task_path(task), class: "ch-btn ch-btn--danger",
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
-<%= link_to 'Station 1 Active Tasks', controller: 'station1' %>
-<%= link_to 'Station 2 Active Tasks', controller: 'station2' %>
+</div>
+</div>
+</div>
+</div>

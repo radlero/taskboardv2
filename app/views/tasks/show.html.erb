@@ -1,11 +1,10 @@
+<div class="ch-row">
+  <div class="md:ch-col--8">
+    <div class="ch-card">
+      <div class="ch-card__content">
 <p>
   <strong>Task:</strong>
   <%= @task.task %>
-</p>
-
-<p>
-  <strong>Time:</strong>
-  <%= @task.time %>
 </p>
 
 <p>
@@ -27,5 +26,9 @@
   <strong>Reg Number:</strong>
   <%= @task.regnum %>
 </p>
-<%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Back', tasks_path %>
+<%= link_to 'Edit', edit_task_path(@task), {class: "ch-btn ch-btn--primary"} %> |
+<%= link_to 'Back', tasks_path, {class: "ch-btn ch-btn--secondary"}%>
+</div>
+</div>
+</div>
+</div>
